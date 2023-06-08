@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tung Nguyen"]
   spec.email         = ["tongueroo@gmail.com"]
   spec.summary       = "Sprockets Jets Integration"
-  spec.homepage      = "https://github.com/boltops-tools/sprockets-jets"
+  spec.homepage      = "https://github.com/rubyonjets/sprockets-jets"
   spec.license       = "MIT"
 
   spec.files         = File.directory?('.git') ? `git ls-files`.split($/) : Dir.glob("**/*")
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activesupport"
   spec.add_dependency "memoist"
   spec.add_dependency "rainbow"
+  spec.add_dependency "sprockets", ">= 3.0.0"
   spec.add_dependency "zeitwerk"
 
   spec.add_development_dependency "bundler"

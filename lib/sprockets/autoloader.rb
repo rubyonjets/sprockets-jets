@@ -14,6 +14,7 @@ module Sprockets
         loader = Zeitwerk::Loader.new
         loader.inflector = Inflector.new
         loader.push_dir(File.dirname(__dir__)) # lib
+        loader.ignore("#{File.dirname(__dir__)}/sprockets-jets.rb")
         loader.setup
       end
     end

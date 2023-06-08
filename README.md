@@ -1,39 +1,23 @@
-# Sprockets
+# Sprockets Jets
 
-[![Gem Version](https://badge.fury.io/rb/sprockets.png)](http://badge.fury.io/rb/sprockets)
-[![CircleCI](https://circleci.com/gh/USER/sprockets.svg?style=svg)](https://circleci.com/gh/USER/sprockets)
-[![Dependency Status](https://gemnasium.com/USER/sprockets.png)](https://gemnasium.com/USER/sprockets)
-[![Coverage Status](https://coveralls.io/sprocketss/USER/sprockets/badge.png)](https://coveralls.io/r/USER/sprockets)
-[![Join the chat at https://gitter.im/USER/sprockets](https://badges.gitter.im/USER/sprockets.svg)](https://gitter.im/USER/sprockets?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Support](https://img.shields.io/badge/get-support-blue.svg)](https://boltops.com?utm_source=badge&utm_medium=badge&utm_campaign=sprockets)
+[![Gem Version](https://badge.fury.io/rb/sprockets-jets.png)](http://badge.fury.io/rb/sprockets-jets)
 
-TODO: Write a gem description
+[![BoltOps Badge](https://img.boltops.com/boltops/badges/boltops-badge.png)](https://www.boltops.com)
 
-## Usage
+[![BoltOps Learn Badge](https://img.boltops.com/boltops-learn/boltops-learn.png)](https://learn.boltops.com)
 
-    sprockets hello yourname
-    sprockets sub:goodbye yourname
-
-The CLI tool also detects and tasks in the current folder's Rakefile and delegate to those tasks.
+Provides [Sprockets](https://github.com/rails/sprockets) implementation for Jets Asset Pipeline.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Gemfile
 
-    gem "sprockets"
+```ruby
+gem "sprockets-jets"
+```
 
-And then execute:
+## Usage
 
-    bundle
-
-Or install it yourself as:
-
-    gem install sprockets
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am "Add some feature"`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    jets assets:precompile
+    jets assets:clean       # keeps most recent 3 copies
+    jets assets:clobber
